@@ -2,7 +2,7 @@
 <template>
   <header>
     <RouterLink to="/">
-      <img alt="Vue logo" class="sol" src="@/assets/img/logo.png" width="75" height="75" />
+      <img alt="Vue logo" class="" src="@/assets/img/logo.png" width="50" height="50" />
     </RouterLink>
 
     <h1 class="sol foldit">TechnoCloudSolution</h1>
@@ -29,6 +29,9 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+}
+h1 {
+  font-size: 1.2rem;
 }
 .link {
   margin: 10px;

@@ -46,8 +46,4 @@ main {
 h3 {
   font-weight: 600;
 }
-strong {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
 </style>
