@@ -1,17 +1,10 @@
-<script setup>
-/*defineProps({
-  date: {
-    type: String,
-    required: true
-  }
-})*/
-</script>
+<script setup></script>
 <template>
-  <!--<div><h1 class="green">{{ msg }}</h1></div>-->
-  <header id="header">
-    <a href="#header">
-      <img alt="Vue logo" class="sol" src="@/assets/img/logo.png" width="75" height="75"
-    /></a>
+  <header>
+    <RouterLink to="/">
+      <img alt="Vue logo" class="sol" src="@/assets/img/logo.png" width="75" height="75" />
+    </RouterLink>
+
     <h1 class="sol foldit">TechnoCloudSolution</h1>
     <nav class="contener">
       <div class="link">
@@ -39,5 +32,10 @@ header {
 }
 .link {
   margin: 10px;
+}
+a:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+  font-size: 1.1rem;
 }
 </style>

@@ -9,7 +9,12 @@ import TheFooter from './components/TheFooter.vue'
 </script>
 
 <template>
-  <div class="sol"><TheHeader /></div>
+  <div>
+    <TheHeader />
+  </div>
+  <div class="position">
+    <RouterView />
+  </div>
   <div class="sol about">
     <AboutMe />
   </div>
@@ -18,14 +23,25 @@ import TheFooter from './components/TheFooter.vue'
   <footer>
     <TheFooter />
   </footer>
-  <RouterView />
+
+  <div class="add"></div>
 </template>
 
 <style scoped>
 .about {
-  margin-top: 160px;
+  margin-top: 130px;
 }
 main {
   margin-bottom: 200px;
+}
+.position {
+  background-color: white;
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+.add {
+  margin-top: 10px;
+  height: 10vh;
 }
 </style>

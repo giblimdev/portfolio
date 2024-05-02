@@ -1,13 +1,19 @@
 <script setup>
 //import { LastMAJ } from '../stores/DateMAJ.js'
-//const LastMAJ = setLastMAJ()
-const LastMAJ = '21-04-2024'
+
+// Crée une nouvelle instance de la classe Date
+const dateDuJour = new Date()
+const jour = dateDuJour.getDate()
+const mois = dateDuJour.getMonth() + 1
+const annee = dateDuJour.getFullYear()
+
+//console.log(`Date du jour : ${jour}/${mois}/${annee}`)
 </script>
 
 <template>
   <footer class="contener">
     <div>
-      <p class="">Dernière mise a jour : {{ LastMAJ }}</p>
+      <p>Dernière mise a jour : {{ jour }}/{{ mois }}/{{ annee }}</p>
     </div>
     <div class="box_logo">
       <a class="a_logo" href="https://linkedin.com/in/" target="_blank">
@@ -34,7 +40,6 @@ footer {
   padding: 10px;
 }
 .box_logo {
-  border: solid red;
   display: flex;
   justify-content: space-around;
   margin: 5px auto;

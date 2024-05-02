@@ -17,8 +17,13 @@ const closeModal = () => {
       <div class="articleimage">
         <img class="img" v-bind:src="'/src/assets/img/' + article.image" />
       </div>
+
       <h2>{{ article.name }}</h2>
       <p>{{ article.technology }}</p>
+      <button class="btnmodal">
+        <a v-bind:href="article.lien" target="_blank">Découvrir</a>
+      </button>
+
       <p>{{ article.date }}</p>
       <button @click="closeModal">Fermer</button>
     </div>
@@ -52,5 +57,14 @@ const closeModal = () => {
 img {
   width: 100%;
   height: auto;
+}
+.btnmodal {
+  background-color: blue;
+  border-radius: 10px;
+}
+a:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+  font-size: 1.1rem;
 }
 </style>
