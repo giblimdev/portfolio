@@ -19,7 +19,7 @@ const closeModal = () => {
 <template>
   <div class="thearticles">
     <h1>Liste des Articless</h1>
-
+    <!-- <div cassName="container-fluid d-flex flex-wrap justify-content-center">-->
     <div class="article-container">
       <div v-for="article in articles" :key="article.id" @click="openModal(article)">
         <div class="article-list">
@@ -38,7 +38,6 @@ const closeModal = () => {
 <style scoped>
 .thearticles {
   height: 70vh;
-  overflow: auto;
 }
 .article-container {
   display: flex;
@@ -58,6 +57,9 @@ const closeModal = () => {
   border: 1px solid #17eb3e;
   cursor: pointer;
   overflow: hidden;
+}
+.article-list:hover {
+  transform: scale(1.1);
 }
 .articleimage {
   border: solid;

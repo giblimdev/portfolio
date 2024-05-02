@@ -12,19 +12,20 @@ import TheFooter from './components/TheFooter.vue'
   <div>
     <TheHeader />
   </div>
-  <div class="position">
+  <div class="">
     <RouterView />
-  </div>
-  <div class="sol about">
-    <AboutMe />
-  </div>
-  <div class="sol"><TheArticles /></div>
-  <div class="sol"><TheForm /></div>
-  <footer>
-    <TheFooter />
-  </footer>
 
-  <div class="add"></div>
+    <div class="sol about">
+      <AboutMe />
+    </div>
+    <div class="sol"><TheArticles /></div>
+    <div class="sol"><TheForm /></div>
+    <footer>
+      <TheFooter />
+    </footer>
+
+    <div class="add"></div>
+  </div>
 </template>
 
 <style scoped>
@@ -36,7 +37,7 @@ main {
 }
 .position {
   background-color: white;
-  position: absolute;
+  position: relativee;
   top: 100px;
   left: 0;
 }

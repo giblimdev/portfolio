@@ -34,7 +34,6 @@ export default {
 
     const submitForm = () => {
       if (isFormValid()) {
-        // Envoyer le message - code d'envoi ici
         window.alert('Merci pour votre message')
         // Utilisation d'une variable d'environnement pour l'adresse du destinataire
         const destinataire = import.meta.env.VITE_EMAIL_ADDRESS
